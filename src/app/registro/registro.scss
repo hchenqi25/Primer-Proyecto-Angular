@@ -1,0 +1,53 @@
+p {
+  color: red;
+}
+.formulario {
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px 15px 15px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  width: 50%;
+  height: 55%;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  box-sizing: content-box;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+
+}
+
+
+input {
+  border-radius: 15px;
+  background-color: #444;
+  color: white;
+  width: 50%;
+  padding: 5px;
+}
+
+.contenedor-contraseña {
+  padding: 25px;
+}
+
+.contenedor-usuario {
+  padding: 20px;
+}
+
+.boton {
+  background-color: #444;
+  width: 50%;
+  border-radius: 15px;
+  padding: 5px;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-family: "Comic Sans MS";
+  top: 50%;
+  left: 50%;
+  transform: translate(1%,150%);
+}
