@@ -1,4 +1,7 @@
 /* Importing Bootstrap SCSS file. */
+$primary:#ff6000;
+
+
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -7,3 +10,7 @@ p {
   color: orange !important;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}

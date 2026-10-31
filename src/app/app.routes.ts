@@ -4,7 +4,7 @@ export const routes: Routes = [
 
   {
     path:'',
-    loadComponent:() => import("./login/login").then(c => c.Login)
+    loadComponent:() => import("./features/login/login").then(c => c.Login)
   },
   {
     path: 'login',
@@ -13,12 +13,28 @@ export const routes: Routes = [
 
   {
     path: 'registro',
-    loadComponent: () =>import("./registro/registro").then(c => c.Registro)
+    loadComponent: () =>import("./features/registro/registro").then(c => c.Registro)
   },
 
   {
     path: "dashboard",
-    loadComponent:() => import("./dashboard/dashboard").then(c => c.Dashboard)
+    loadComponent:() => import("./features/dashboard/dashboard").then(c => c.Dashboard)
+  },
+
+  {
+    path: "mi-perfil",
+    loadComponent:()=> import("./features/perfil/perfil").then(c => c.Perfil)
+  },
+
+  {
+    path: "login",
+    loadComponent:() => import("./features/login/login").then(c => c.Login)
+  },
+
+
+  {
+    path:'**',
+    loadComponent:() => import("./features/pagina-no-encontrada/pagina-no-encontrada").then(c => c.PaginaNoEncontrada)
   }
 
 
