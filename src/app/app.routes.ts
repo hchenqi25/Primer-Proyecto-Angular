@@ -35,7 +35,19 @@ export const routes: Routes = [
   {
     path:'**',
     loadComponent:() => import("./features/pagina-no-encontrada/pagina-no-encontrada").then(c => c.PaginaNoEncontrada)
+  },
+
+  {
+    path:'error',
+    loadComponent:() =>import("./shared/components/layouts/error403/error403").then(c => c.Error403)
+  },
+
+  {
+    path:'**',
+    loadComponent:() => import("./shared/components/layouts/error404/error404").then(c => c.Error404)
   }
+
+
 
 
 

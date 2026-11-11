@@ -7,4 +7,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './perfil.scss',
   templateUrl: './perfil.html',
 })
-export class Perfil {}
+export class Perfil {
+
+  nombre:string ="";
+
+
+}
